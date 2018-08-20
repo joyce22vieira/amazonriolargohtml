@@ -14,6 +14,10 @@ public class Cliente {
 	private String email;
 	private double senha;
 	
+	public Cliente() {
+		
+	}
+	
 	public Cliente(String Nome, String Email, double Senha) {
 		super();
 		this.nome = Nome;

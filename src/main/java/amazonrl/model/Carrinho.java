@@ -19,6 +19,9 @@ public class Carrinho {
 	
 	private Date dataCompra;
 	
+	public Carrinho() {
+		
+	}
 	
 	public Carrinho(String CategoriaProduto, Cliente cliente) {
 		this.cliente = cliente;

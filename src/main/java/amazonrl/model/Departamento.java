@@ -15,7 +15,11 @@ public class Departamento {
 	
 	private String nome;
 
-	public List<Categoria> categorias;
+	private List<Categoria> categorias;
+	
+	public Departamento() {
+		
+	}
 
 	public List<Categoria> getCategorias() {
 		return categorias;
