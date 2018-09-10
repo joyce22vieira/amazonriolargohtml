@@ -1,5 +1,7 @@
 package amazonrl;
 
+import amazonrl.model.*;
+
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
