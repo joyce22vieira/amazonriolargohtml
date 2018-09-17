@@ -1,26 +1,21 @@
 package amazonrl;
 
-import amazonrl.model.*;
-
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 
-import Usuario;
+import amazonrl.model.Usuario;
+
 
 public class App {
     public static void main( String[] args ){
     	EntityManager manager = JPAUtil.getEntityManager();
 		EntityTransaction tx = manager.getTransaction();
 		tx.begin();
-		
-		Usuario u = new Usuario();
-		
-		u.setNome("Thiago");
-		u.setSenha("123456");
-		
-		manager.persist(u);
-		
+	
+         Usuario user = new Usuario();
+		 user.setNome("Luiz");
+		 user.setSenha("auxilioebom");
+         
 		tx.commit();
 		manager.close();
 		JPAUtil.close();
