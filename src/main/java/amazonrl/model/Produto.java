@@ -22,6 +22,16 @@ public class Produto {
 		
 	}
 	
+	
+	
+	public Produto(String nome, double preco) {
+		super();
+		this.nome = nome;
+		this.preco = preco;
+	}
+
+
+
 	public String getNome() {
 		return nome;
 	}
@@ -63,7 +73,7 @@ public class Produto {
 		categoria.setId(id);
 	}
 
-	private List<Produto> getProdutos() {
+	private List<Produto> getListetProdutos() {
 		return categoria.getProdutos();
 	}
 
